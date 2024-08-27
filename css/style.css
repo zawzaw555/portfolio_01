@@ -66,7 +66,7 @@ body{
     cursor: pointer;
 }
 
-.menu_icon .common{
+.common{
     position: absolute;
     height: 2px;
     width: 30px;
@@ -76,15 +76,15 @@ body{
     transition: 0.3s ease;
 }
 
-.menu_icon .top_line{
+.top_line{
     top: 20%;
 }
 
-.menu_icon .middle_line{
+.middle_line{
     top: 50%;
 }
 
-.menu_icon .bottom_line{
+.bottom_line{
     top: 80%;
 }
 
@@ -111,7 +111,7 @@ aside{
     position: fixed;
     top: 4rem;
     padding-top: 2rem;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     z-index: 10;
     height: 100vh;
@@ -119,13 +119,12 @@ aside{
     opacity: 0;
     width: 12rem;
     transition: 0.5s ease;
-    pointer-events: none;
+    cursor: pointer;
 }
 
 .active.side_bar{
     opacity: 1;
     right: 0px;
-    pointer-events: fill;
 }
 
 .side_bar ul{
@@ -138,13 +137,13 @@ aside{
 
 .side_bar ul li a{
     text-decoration: none;
-    color: var(--main-color);
+    color: #000000;
     font-size: 1.5rem;
-    font-weight: bold;
 }
 
-.side_bar ul li a:hover{
-    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+.side_bar li a:hover,
+.side_bar li a:active{
+    color: var(--main-color);
 }
 
 .navbar{
@@ -334,7 +333,7 @@ aside{
     padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
     box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2);
     border-radius: 5px;
@@ -346,7 +345,7 @@ aside{
 
 .portfolio_card img{
     width: 100%;
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 .portfolio_card p{
@@ -495,5 +494,28 @@ aside{
 
     .about_photo img{
         margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width:971px){
+
+    .logo{
+        font-size: 1.6rem;
+    }
+
+    .menu_icon{
+        display: block;
+    }
+
+    .nav_list{
+        display: none;
+    }
+    
+    .portfolio_card{
+        width: 370px;
+    }
+    
+    .portfolio_card img{
+        width: 350px;
     }
 }
