@@ -11,9 +11,10 @@
 }
 
 :root{
-    --bg-color: #ffffff;
+    --header-color: hsl(86, 17%, 81%);
+    --bg-color: #f5efef;
     --text-color: #000000;
-    --main-color: #0C97FA;
+    --main-color: #7fc5f7;
 }
 
 html{
@@ -40,7 +41,7 @@ body{
     left: 0;
     width: 100%;
     padding: 0.5rem;
-    background: var(--bg-color);
+    background: var(--header-color);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 100;
 }
@@ -297,7 +298,7 @@ aside{
     width: 55%;
 }
 
-.skill_php{
+.skill_java{
     width: 50%;
 }
 
